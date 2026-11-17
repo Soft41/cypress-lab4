@@ -1,0 +1,8 @@
+node_modules/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+*.log
+.idea/
+test-accounts.md
+README.md

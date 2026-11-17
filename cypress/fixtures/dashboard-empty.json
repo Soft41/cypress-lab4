@@ -1,0 +1,8 @@
+{
+  "machines": 0,
+  "techcards": 0,
+  "tools": 0,
+  "users": 1,
+  "today": { "runs": 0, "inProgress": 0, "partsGood": 0, "partsScrapped": 0 },
+  "setup": { "techcardsPublished": 0, "toolsPlaced": 0, "machinesPaired": 0, "operatorsWithBadge": 0, "runsEver": 0 }
+}

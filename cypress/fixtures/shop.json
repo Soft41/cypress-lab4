@@ -1,0 +1,45 @@
+{
+  "parts": {
+    "shaiba": { "name": "Шайба с четвертью Ø50", "code": "SH-50" },
+    "shuriken": { "name": "Сюрикен R40", "code": "SR-40" },
+    "korpus": { "name": "Корпус 80×60", "code": "KR-8060" }
+  },
+  "techcards": [
+    {
+      "code": "SHB-50",
+      "title": "Шайба с четвертью, лист 190×130",
+      "material": "Сталь 3 мм / 4 мм",
+      "outputs": { "shaiba": 6 },
+      "steps": [
+        { "title": "Отверстие Ø20", "file": "shaiba-chetvert.tap", "instruction": "Фреза Ø3, гнездо 1. Лист прижат по четырём углам." },
+        { "title": "Четверть Ø50→Ø42", "file": "shaiba-chetvert.tap", "instruction": "Фреза Ø6, гнездо 2. Глубина уступа 1.5 мм." },
+        { "title": "Обрезка по контуру", "file": "shaiba-chetvert.tap", "changeTool": true, "instruction": "Снова фреза Ø3 — поставить свежую." },
+        { "title": "Снять шайбы, зачистить заусенцы", "kind": "MANUAL" }
+      ]
+    },
+    {
+      "code": "SRK-40",
+      "title": "Сюрикен, лист 200×200",
+      "material": "Сталь 3 мм",
+      "outputs": { "shuriken": 4 },
+      "steps": [
+        { "title": "Центральное отверстие Ø8", "file": "shuriken.tap", "instruction": "Сверло Ø8, гнездо 4." },
+        { "title": "Контур звезды", "file": "shuriken.tap", "instruction": "Фреза Ø2, гнездо 3. Три прохода по глубине." },
+        { "title": "Выломать сюрикены, снять облой", "kind": "MANUAL" }
+      ]
+    },
+    {
+      "code": "KRP-8060",
+      "title": "Корпус 80×60×24, две стороны",
+      "material": "Д16Т, заготовка 80×60×25",
+      "outputs": { "korpus": 1 },
+      "steps": [
+        { "title": "Сторона A: карман 60×40", "sheetLabel": "A", "file": "korpus-storona-A.tap", "instruction": "Фреза Ø6, гнездо 2. Ноль — центр верха, база — левая и нижняя грань." },
+        { "title": "Сторона A: отверстия под М4", "sheetLabel": "A", "file": "korpus-storona-A.tap", "instruction": "Сверло Ø3.3, гнездо 7, насквозь." },
+        { "title": "Перевернуть заготовку карманом вниз", "kind": "MANUAL", "instruction": "Базировать по тем же граням, прижать через прокладку. Ноль по Z — заново, по верху." },
+        { "title": "Сторона B: торцовка в размер 24", "sheetLabel": "B", "file": "korpus-storona-B.tap", "instruction": "Торцевая фреза Ø40, гнездо 5." },
+        { "title": "Сторона B: фаска 1×45°", "sheetLabel": "B", "file": "korpus-storona-B.tap", "instruction": "Фасочная фреза 90°, гнездо 6." }
+      ]
+    }
+  ]
+}

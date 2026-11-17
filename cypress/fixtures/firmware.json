@@ -1,0 +1,65 @@
+{
+  "firmwares": [
+    {
+      "id": "00000000-0000-4000-8000-000000000021",
+      "board": "d1_mini",
+      "version": "0.2.1",
+      "md5": "0e1811b28957327635f3afb41cdc55dc",
+      "sizeBytes": 501552,
+      "active": true,
+      "createdAt": "2026-10-21T10:00:00.000Z",
+      "uploadedBy": { "id": "u1", "fullName": "Админ Цеха №1" }
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000020",
+      "board": "d1_mini",
+      "version": "0.2.0",
+      "md5": "9a742955105bee54bcb76246fa86253e",
+      "sizeBytes": 500256,
+      "active": false,
+      "createdAt": "2026-10-20T10:00:00.000Z",
+      "uploadedBy": { "id": "u1", "fullName": "Админ Цеха №1" }
+    }
+  ],
+  "terminals": [
+    {
+      "id": "d1",
+      "board": "d1_mini",
+      "fwVersion": "0.2.0",
+      "fwTarget": "0.2.1",
+      "fwState": "failed",
+      "fwError": "HTTP_UPDATE_FAILED: MD5",
+      "fwStateAt": "2026-10-21T10:05:00.000Z",
+      "lastSeenAt": "2026-10-21T10:06:00.000Z",
+      "online": true,
+      "offer": "0.2.1",
+      "machine": { "id": "m1", "name": "Станок 1" }
+    },
+    {
+      "id": "d2",
+      "board": null,
+      "fwVersion": "0.1.0",
+      "fwTarget": null,
+      "fwState": null,
+      "fwError": null,
+      "fwStateAt": null,
+      "lastSeenAt": "2026-10-21T10:06:00.000Z",
+      "online": true,
+      "offer": null,
+      "machine": { "id": "m2", "name": "Станок 2" }
+    },
+    {
+      "id": "d4",
+      "board": "d1_mini",
+      "fwVersion": "0.2.1",
+      "fwTarget": "0.2.1",
+      "fwState": "done",
+      "fwError": null,
+      "fwStateAt": "2026-10-21T10:01:00.000Z",
+      "lastSeenAt": "2026-10-21T10:06:00.000Z",
+      "online": true,
+      "offer": null,
+      "machine": { "id": "m4", "name": "Станок 4" }
+    }
+  ]
+}

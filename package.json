@@ -1,0 +1,17 @@
+{
+  "name": "cypress-lab4",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Лабораторна робота №4: фреймворк Cypress — math.html і тести CNC-Flow",
+  "scripts": {
+    "test": "cypress run",
+    "test:math": "cypress run --spec cypress/e2e/01-math.cy.js",
+    "test:cncflow": "cypress run --spec \"cypress/e2e/cncflow/**/*.cy.js\"",
+    "test:headed": "cypress run --headed --browser chrome",
+    "test:math:headed": "cypress run --headed --browser chrome --no-exit --spec cypress/e2e/01-math.cy.js",
+    "open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "13.17.0"
+  }
+}

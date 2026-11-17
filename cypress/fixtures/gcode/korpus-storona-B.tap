@@ -1,0 +1,49 @@
+%
+(CNC-Flow test: Korpus - storona B (pislia perevorotu))
+(Kryshkoiu vnyz, nul - tsentr verkhu, ta sama baza)
+G21 G90 G17 G54
+G0 Z15
+G0 Z15
+M5
+T5 M6 (Tortseva D40)
+S6000 M3
+G0 Z5
+G0 X-62 Y-30
+G1 Z-0.5 F300
+G1 Y-30 F1500
+G1 X62
+G1 Y0 F1500
+G1 X-62
+G1 Y30 F1500
+G1 X62
+G0 Z3
+G0 X-62 Y-30
+G1 Z-1 F300
+G1 Y-30 F1500
+G1 X62
+G1 Y0 F1500
+G1 X-62
+G1 Y30 F1500
+G1 X62
+G0 Z3
+G0 Z15
+M10 (signal: segment done)
+G0 Z15
+M5
+T6 M6 (Faskova 90)
+S12000 M3
+G0 Z5
+G0 X-41 Y-31
+G1 Z-2 F200
+G1 X41 Y-31 F900
+Y31
+X-41
+Y-31
+G0 Z3
+G0 Z15
+M10 (signal: segment done)
+G0 Z15
+M5
+G0 X0 Y0
+M30
+%
